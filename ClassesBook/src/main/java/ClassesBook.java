@@ -12,7 +12,9 @@ import java.util.Arrays;
         books[4] = new Book(5, "Great Expectations", "Charles Dickens", "Crown Publishing Group", 1999, 234, "soft cover");
         books[5] = new Book(6, "David Copperfield", "Charles Dickens", "Holiday House", 2001, 120, "soft cover");
 
-
+        for (Book book : books)  {
+            System.out.println(book);
+        }
         System.out.println(Arrays.toString(books));
         System.out.println();
 

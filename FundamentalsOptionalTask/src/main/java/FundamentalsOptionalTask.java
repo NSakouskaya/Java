@@ -31,7 +31,7 @@ public class FundamentalsOptionalTask {
         System.out.println("Inserted array elements: " + Arrays.toString(arr));
         minDiffNum(arr);
         System.out.println();
-        minMaxNumbersAndLenght(arr);
+        minMaxNumbersAndLength(arr);
         System.out.println();
         sortArray(arr);
 
@@ -58,7 +58,7 @@ public class FundamentalsOptionalTask {
         }
         return numbers.size();
     }
-    private static void minMaxNumbersAndLenght(int[] arr) {
+    private static void minMaxNumbersAndLength(int[] arr) {
         int maxNum, minNum;
         maxNum = minNum = arr[0];
         int maxNumCount, minNumCount;

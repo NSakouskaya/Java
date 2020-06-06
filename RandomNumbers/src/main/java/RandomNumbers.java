@@ -8,9 +8,13 @@ import java.util.Random;
 
 class RandomNumbers {
 
-    Random random = new Random();
-    int[] arr = new int[5];
+    private Random random;
+    private int[] arr;
 
+    public RandomNumbers() {
+        random =new Random();
+        arr = new int[5];
+    }
 
     public void setMyArray(){
         for (int i = 0; i<arr.length; i++){

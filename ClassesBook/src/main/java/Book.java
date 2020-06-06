@@ -97,7 +97,7 @@ class Book {
 
     @Override
     public String toString() {
-        return this.id + " " + this.title + " " + this.author + " " + this.publishingOffice + " " + this.year + " " + this.numberOfPages + " " + this.bindingType + " ";
+        return this.id + " " + this.title + " " + this.author + " " + this.publishingOffice + " " + this.year + " " + this.numberOfPages + " " + this.bindingType;
 
     }
 

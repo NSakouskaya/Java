@@ -20,6 +20,8 @@
         <module>FileSorter</module>
         <module>PoemRowsSorter</module>
         <module>ReverseRecorder</module>
+        <module>TaxiStation</module>
+        <module>aircompany</module>
     </modules>
 
     <properties>

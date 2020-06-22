@@ -1,10 +1,7 @@
+//Fundamentals: 3. Вывести заданное количество случайных чисел с переходом и без перехода на новую строку
+
 package com.company;
-
-//3. Вывести заданное количество случайных чисел с переходом и без перехода на новую строку
-
-import java.util.Arrays;
 import java.util.Random;
-
 
 class RandomNumbers {
 

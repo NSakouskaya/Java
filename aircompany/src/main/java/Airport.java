@@ -5,10 +5,6 @@ import planes.Plane;
 import models.MilitaryType;
 import java.util.*;
 
-// version: 1.1
-// made by Vitali Shulha
-// 4-Jan-2019
-
 public class Airport {
     private final List<? extends Plane> allPlanes;
 
@@ -50,7 +46,7 @@ public class Airport {
         return experimentalPlanes;
     }
 
-    public PlanePassenger getPassengerPlaneWithMaxPassengersCapacity() {
+    public PlanePassenger getPassengerPlaneWithMaxCapacity() {
         List<PlanePassenger> passengerPlanes = getPassengerPlanes();
         PlanePassenger planeWithMaxCapacity = passengerPlanes.get(0);
         for (PlanePassenger plane: passengerPlanes) {

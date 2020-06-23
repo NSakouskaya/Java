@@ -1,7 +1,7 @@
 package planes;
 import java.util.List;
 
-public class Printer {
+public class PlanePrinter {
     public static void printPlaneList(List<? extends Plane> collection) {
         if (collection == null || collection.size() == 0) {
             System.out.println("No data to display!");

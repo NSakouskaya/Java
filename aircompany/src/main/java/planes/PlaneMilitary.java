@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class PlaneMilitary extends Plane {
 
-    private MilitaryType type;
+    private final MilitaryType type;
 
     public PlaneMilitary(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, MilitaryType type) {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);

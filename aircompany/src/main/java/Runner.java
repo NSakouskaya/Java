@@ -3,7 +3,7 @@ import models.MilitaryType;
 import java.util.Arrays;
 import java.util.List;
 import static planes.PlaneSorter.*;
-import static planes.Printer.*;
+import static planes.PlanePrinter.*;
 
 public class Runner {
     static List<Plane> planes = Arrays.asList(
@@ -30,6 +30,6 @@ public class Runner {
         printPlaneList(sortByMaxSpeed(airport.getPassengerPlanes()));
         System.out.println("Experimental planes sorted by max load capacity:");
         printPlaneList(sortByMaxLoadCapacity(airport.getExperimentalPlanes()));
-        System.out.println("Plane with max passenger capacity: " + airport.getPassengerPlaneWithMaxPassengersCapacity());
+        System.out.println("Plane with max passenger capacity: " + airport.getPassengerPlaneWithMaxCapacity());
     }
 }

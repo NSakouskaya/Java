@@ -13,7 +13,6 @@ public class AssertHelper extends Assert {
                 break;
             }
         }
-
         return flag;
     }
 }

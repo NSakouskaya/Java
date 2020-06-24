@@ -1,6 +1,5 @@
 import org.testng.Assert;
 import planes.Plane;
-
 import java.util.List;
 
 public class AssertHelper extends Assert {

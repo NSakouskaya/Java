@@ -12,7 +12,7 @@ public class Faculty {
         groups = new ArrayList<>();
     }
 
-     public String getFacultyName() { return facultyName; }
+    public String getFacultyName() { return facultyName; }
 
     public String getDescription() {
         return description;

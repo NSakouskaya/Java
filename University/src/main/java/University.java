@@ -9,7 +9,7 @@ public class University {
     }
 
     public List<Faculty> getFaculties() {
-        if (this.faculties.isEmpty()) {
+        if (this.faculties.size() == 0) {
             throw new ArrayIndexOutOfBoundsException("The university has no any faculties yet.");
         }
         return this.faculties;

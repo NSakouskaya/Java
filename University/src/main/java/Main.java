@@ -1,8 +1,5 @@
 import java.io.IOException;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.function.Function;
-import java.util.function.Predicate;
 
 import static java.util.stream.Collectors.*;
 
@@ -36,7 +33,7 @@ public class Main {
                     faculty1.getFacultyName(), subject2.getName(), group.getGroupName(), averageGradeBySubject));
 
             // to calculate average grade for a specific subject in University (filters: subject ID 2)
-            List<Student> sts = university.getFaculties().stream().flatMap(faculty -> faculty.getGroups().stream().flatMap(g -> g.getStudents().stream())).collect(toList()); // to take all students in University
+            List<Student> sts = university.getFaculties().stream().flatMap(faculty -> faculty.getGroups().stream().flatMap(g -> g.getStudents().stream())).collect(toList());
             List<Subject> subjects = sts.stream().flatMap(s -> s.getSubjects().stream()).distinct().collect(toList());
 
             Subject sb = subjects.stream().filter(f -> f.getId() == 2).findFirst().orElse(null);

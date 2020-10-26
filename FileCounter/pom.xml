@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>FileNameCalculator</artifactId>
+    <artifactId>FileCounter</artifactId>
     <build>
         <plugins>
             <plugin>

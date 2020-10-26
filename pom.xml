@@ -23,7 +23,7 @@
         <module>TaxiStation</module>
         <module>aircompany</module>
         <module>University</module>
-        <module>FileNameCalculator</module>
+        <module>FileCounter</module>
     </modules>
 
     <properties>

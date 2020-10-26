@@ -1,5 +1,5 @@
 public class Grade {
-    private int id;
+
     private int studentId;
     private int grade;
 
@@ -11,8 +11,7 @@ public class Grade {
         return this.grade;
     }
 
-    public Grade(int id, int studentId, int grade) {
-        this.id = id;
+    public Grade(int studentId, int grade) {
         this.studentId = studentId;
 
         if (grade < 0 || grade > 10)

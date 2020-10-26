@@ -3,14 +3,12 @@ import java.util.List;
 
 public class Student {
     private int id;
-    private String groupName;
     private String firstName;
     private String lastName;
     private ArrayList<Subject> subjects;
 
-    public Student(int id, String groupName, String firstName, String lastName) {
+    public Student(int id, String firstName, String lastName) {
         this.id = id;
-        this.groupName = groupName;
         this.firstName = firstName;
         this.lastName = lastName;
         this.subjects = new ArrayList<>();
@@ -19,8 +17,6 @@ public class Student {
     public int getId() {
         return this.id;
     }
-
-    public String getGroupName() { return groupName; }
 
     public String getFirstName() {
         return this.firstName;
@@ -38,13 +34,13 @@ public class Student {
     }
 
     public void addSubject(Subject subject) {
-        if (this.subjects.stream().anyMatch(h -> h.getId() == subject.getId())) {
+        if (this.subjects.stream().anyMatch(h -> h.getName() == subject.getName())) {
             throw new IllegalArgumentException("Student with the same ID is presented");
         }
         this.subjects.add(subject);
     }
 
-    public Subject getSubjectById(int subjectId) {
-        return this.subjects.stream().filter(f -> f.getId() == subjectId).findFirst().orElse(null);
+    public Subject getSubjectByName(String subjectName) {
+        return this.subjects.stream().filter(f -> f.getName() == subjectName).findFirst().orElse(null);
     }
 }

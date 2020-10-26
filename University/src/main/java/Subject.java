@@ -3,28 +3,16 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Subject {
-    private int id;
     private String name;
-    private String description;
     private List<Grade> grades;
 
-    public Subject(int id, String name, String description) {
-        this.id = id;
+    public Subject(String name) {
         this.name = name;
-        this.description = description;
         grades = new ArrayList<>();
-    }
-
-    public int getId() {
-        return this.id;
     }
 
     public String getName() {
         return this.name;
-    }
-
-    public String getDescription() {
-        return description;
     }
 
     public List<Grade> getGrades() { return this.grades; }

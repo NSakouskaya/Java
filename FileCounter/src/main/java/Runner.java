@@ -10,7 +10,7 @@ public class Runner {
 
         String directoryPath = args[0];
         String destinationPath = args[1];
-        int level = 1;
+        int level = 0;
 
         try {
 

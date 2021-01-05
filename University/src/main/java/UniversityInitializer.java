@@ -73,6 +73,10 @@ public class UniversityInitializer {
         university.addFaculty(faculty1);
         university.addFaculty(faculty2);
 
+        university.addSubject(subject1);
+        university.addSubject(subject2);
+        university.addSubject(subject3);
+
         return university;
     }
 }

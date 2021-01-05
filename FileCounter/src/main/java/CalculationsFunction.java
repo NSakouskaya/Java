@@ -15,7 +15,7 @@ public class CalculationsFunction {
 
         List<String> stringList = Files.readAllLines(Paths.get(destinationPath));
         stringList.stream().forEach(s -> {
-            if (s.startsWith(" |------"))
+            if (s.startsWith(" |---"))
                directoryCount++;
             if (s.endsWith(".txt"))
                 fileCount++; });

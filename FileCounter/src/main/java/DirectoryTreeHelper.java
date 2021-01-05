@@ -5,9 +5,13 @@ import java.util.Collections;
 public final class DirectoryTreeHelper {
 
     public static void mapToStringArray(DirectoryTree from, ArrayList<String> to, int level) {
-        to.add(" |" + String.join("", Collections.nCopies(level*3, "-")) + from.getDirectoryName());
+        if (level > 0)
+            to.add(" |---" + from.getDirectoryName());
+        else
+            to.add(from.getDirectoryName());
+
         for (String fn: from.getFileNames()) {
-            to.add(" |" + String.join("", Collections.nCopies(level*3, " ")) + fn);
+            to.add(" |   " + fn);
         }
         for (DirectoryTree subDirectory: from.getNode()) {
             int nextLevel = level + 1;

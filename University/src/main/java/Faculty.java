@@ -25,6 +25,6 @@ public class Faculty {
 
 
     public Group getGroupByName(String groupName) {
-        return this.groups.stream().filter(f -> f.getGroupName() == groupName).findFirst().orElse(null);
+        return this.groups.stream().filter(f -> f.getGroupName().equals(groupName)).findFirst().orElse(null);
     }
 }

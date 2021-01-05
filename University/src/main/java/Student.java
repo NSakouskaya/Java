@@ -34,13 +34,13 @@ public class Student {
     }
 
     public void addSubject(Subject subject) {
-        if (this.subjects.stream().anyMatch(h -> h.getName() == subject.getName())) {
+        if (this.subjects.stream().anyMatch(h -> h.getName().equals(subject.getName()))) {
             throw new IllegalArgumentException("Student with the same ID is presented");
         }
         this.subjects.add(subject);
     }
 
     public Subject getSubjectByName(String subjectName) {
-        return this.subjects.stream().filter(f -> f.getName() == subjectName).findFirst().orElse(null);
+        return this.subjects.stream().filter(f -> f.getName().equals(subjectName)).findFirst().orElse(null);
     }
 }

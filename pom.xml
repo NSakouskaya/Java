@@ -24,6 +24,7 @@
         <module>aircompany</module>
         <module>University</module>
         <module>FileCounter</module>
+        <module>NewUni</module>
     </modules>
 
     <properties>
